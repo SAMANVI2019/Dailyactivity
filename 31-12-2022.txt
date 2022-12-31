@@ -1,0 +1,345 @@
+-------------------------------------------------------------------------------------
+1. -bash-4.2$ mkdir commands
+
+2. -bash-4.2$ cd commands
+-----------------------------------------------------
+3. -bash-4.2$ ls -l
+total 12
+drwxrwxr-x 2 ec2-user ec2-user    6 Dec 31 14:00 commands
+-rw-rw-r-- 1 ec2-user ec2-user   86 Dec 30 15:28 delete.sh
+-rw-rw-r-- 1 ec2-user ec2-user    0 Dec 30 12:45 t
+-rw-rw-r-- 1 ec2-user ec2-user    0 Dec 30 12:45 t1
+-rw-rw-r-- 1 ec2-user ec2-user    0 Dec 30 12:45 t10
+-rw-r--r-- 1 ec2-user ec2-user 8161 Dec 31 14:01 t1.txt
+-rw-rw-r-- 1 ec2-user ec2-user    0 Dec 30 12:45 t2
+-rw-rw-r-- 1 ec2-user ec2-user    0 Dec 30 12:45 t3
+-rw-rw-r-- 1 ec2-user ec2-user    0 Dec 30 12:45 t4
+-rw-rw-r-- 1 ec2-user ec2-user    0 Dec 30 12:45 t6
+-rw-rw-r-- 1 ec2-user ec2-user    0 Dec 30 12:45 t7
+-rw-rw-r-- 1 ec2-user ec2-user    0 Dec 30 12:45 t8
+-rw-rw-r-- 1 ec2-user ec2-user    0 Dec 30 12:45 t9
+drwxrwxr-x 2 ec2-user ec2-user  257 Dec 30 14:30 text
+----------------------------------------------------------------------------
+4. -bash-4.2$ ls -lr
+total 16
+drwxrwxr-x 2 ec2-user ec2-user  257 Dec 30 14:30 text
+-rw-rw-r-- 1 ec2-user ec2-user    0 Dec 30 12:45 t9
+-rw-rw-r-- 1 ec2-user ec2-user    0 Dec 30 12:45 t8
+-rw-rw-r-- 1 ec2-user ec2-user    0 Dec 30 12:45 t7
+-rw-rw-r-- 1 ec2-user ec2-user    0 Dec 30 12:45 t6
+-rw-rw-r-- 1 ec2-user ec2-user    0 Dec 30 12:45 t4
+-rw-rw-r-- 1 ec2-user ec2-user    0 Dec 30 12:45 t3
+-rw-rw-r-- 1 ec2-user ec2-user    0 Dec 30 12:45 t2
+-rw-r--r-- 1 ec2-user ec2-user 8219 Dec 31 14:03 t1.txt
+-rw-rw-r-- 1 ec2-user ec2-user    0 Dec 30 12:45 t10
+-rw-rw-r-- 1 ec2-user ec2-user    0 Dec 30 12:45 t1
+-rw-rw-r-- 1 ec2-user ec2-user    0 Dec 30 12:45 t
+-rw-rw-r-- 1 ec2-user ec2-user   86 Dec 30 15:28 delete.sh
+drwxrwxr-x 2 ec2-user ec2-user    6 Dec 31 14:00 commands
+-----------------------------------------------------------------------
+5. -bash-4.2$ ls -lrt
+total 16
+-rw-rw-r-- 1 ec2-user ec2-user    0 Dec 30 12:45 t9
+-rw-rw-r-- 1 ec2-user ec2-user    0 Dec 30 12:45 t8
+-rw-rw-r-- 1 ec2-user ec2-user    0 Dec 30 12:45 t7
+-rw-rw-r-- 1 ec2-user ec2-user    0 Dec 30 12:45 t6
+-rw-rw-r-- 1 ec2-user ec2-user    0 Dec 30 12:45 t4
+-rw-rw-r-- 1 ec2-user ec2-user    0 Dec 30 12:45 t3
+-rw-rw-r-- 1 ec2-user ec2-user    0 Dec 30 12:45 t2
+-rw-rw-r-- 1 ec2-user ec2-user    0 Dec 30 12:45 t10
+-rw-rw-r-- 1 ec2-user ec2-user    0 Dec 30 12:45 t1
+-rw-rw-r-- 1 ec2-user ec2-user    0 Dec 30 12:45 t
+drwxrwxr-x 2 ec2-user ec2-user  257 Dec 30 14:30 text
+-rw-rw-r-- 1 ec2-user ec2-user   86 Dec 30 15:28 delete.sh
+drwxrwxr-x 2 ec2-user ec2-user    6 Dec 31 14:00 commands
+-rw-r--r-- 1 ec2-user ec2-user 8248 Dec 31 14:04 t1.txt
+---------------------------------------------------------------------------
+6.-bash-4.2$ touch t1.txt t2.txt
+-bash-4.2$ ls
+                   t1.txt  t2.txt
+-bash-4.2$ touch test{1..10}
+-bash-4.2$ ls
+                 t1.txt  t2.txt  test1  test10  test2  test3  test4  test5  test6  test7  test8  test9
+---------------------------------------------------------------------------------------------------------------
+7. -bash-4.2$ pwd
+/home/ec2-user/commands
+
+---------------------------------------------------------------------------------------------------
+8.-bash-4.2$ ls -a
+.  ..  t1.txt  t2.txt  test1  test10  test2  test3  test4  test5  test6  test7  test8  test9
+--------------------------------------------------------------------------------------------------------
+9. -bash-4.2$ ls ./../
+commands  delete.sh  t  t1  t10  t1.txt  t2  t3  t4  t6  t7  t8  t9  text
+---------------------------------------------------------------------------------------------------------
+10. -bash-4.2$ rm -rv test
+removed directory: ‘test’
+-------------------------------------------------------------------------------------
+11. -bash-4.2$ rm -rfv *
+removed ‘t2.txt’
+removed directory: ‘test’
+removed ‘test1’
+removed ‘test10’
+removed ‘test2’
+removed ‘test3’
+removed ‘test4’
+removed ‘test5’
+removed ‘test6’
+removed ‘test7’
+removed ‘test8’
+removed ‘test9’
+--------------------------------------------------------------------------------------
+12. -bash-4.2$ history
+mkdir commands
+  278  ls
+  279  cd commands
+  280  ls -l
+  281  cd..
+  282  cd
+  283  ls -l
+  284  ls -lr
+  285  ls -lrt
+  286  cd commands
+  287  touch t1.txt t2.txt
+  288  ls
+  289  touch test{1..10}
+  290  ls
+  291  pwd
+  292  ls -a
+  293  ls .
+  294  ls ./../
+  295  ls -l ./../
+  296  man telnet
+  297  man echo
+  298  cd ~
+  299  pwd
+  300  cd commands
+  301  pwd
+  302  rm -rv t1.txt
+  303  ls
+  304  mkdir test
+  305  ls
+  306  rm -rv test
+  307  mkdir test
+  308  rm test
+  309  rm -rfv
+  310  ls
+  311  pwd
+  312  rm -rfv
+  313  rm -rfv *
+  314  history
+-----------------------------------------------------------------------------------------------------
+13. -bash-4.2$ rm -v t*
+removed ‘test1’
+removed ‘test10’
+removed ‘test2’
+removed ‘test3’
+removed ‘test4’
+removed ‘test5’
+removed ‘test6’
+removed ‘test7’
+removed ‘test8’
+removed ‘test9’
+--------------------------------------------------------------------------------------------
+14. -bash-4.2$ rm -v *.txt
+removed ‘test10.txt’
+removed ‘test1.txt’
+removed ‘test2.txt’
+removed ‘test3.txt’
+removed ‘test4.txt’
+removed ‘test5.txt’
+removed ‘test6.txt’
+removed ‘test7.txt’
+removed ‘test8.txt’
+removed ‘test9.txt’
+--------------------------------------------------------------------
+15. -bash-4.2$ echo "welcome to devops course">test1.txt
+-bash-4.2$ cat test1.txt
+              welcome to devops course
+-bash-4.2$ echo "welcome">test1.txt
+-bash-4.2$ cat test1.txt
+                 welcome
+-bash-4.2$ echo "welcome to devops course">>test1.txt
+-bash-4.2$ cat test1.txt
+                 welcome
+                 welcome to devops course
+-----------------------------------------------------------------------
+16.-bash-4.2$  cat -n test1.txt
+     1  welcome
+     2  welcome to devops course
+     3  Cat(concatenate) command is very frequently used in Linux. 
+     4  It reads data from the file and gives their content as output.
+     5   It helps us to create, view, concatenate files. 
+     6  So let us see some frequently used cat commands.
+-------------------------------------------------------------------------
+17.-bash-4.2$ wc test1.txt
+                     6  42 256 test1.txt
+
+-bash-4.2$ wc -c test1.txt
+                   256 test1.txt
+
+-bash-4.2$ wc -l test1.txt
+		6 test1.txt
+
+-bash-4.2$ wc -w test1.txt
+		42 test1.txt
+-------------------------------------------------------------------------
+18.-bash-4.2$ grep "welcome" test1.txt
+welcome
+welcome to devops course
+
+-bash-4.2$ grep -n "welcome" test1.txt
+1:welcome
+2:welcome to devops course
+
+-bash-4.2$ grep -i "welcome" test1.txt
+welcome
+welcome to devops course
+ It helps us to create, view, concatenate files. WELCOME
+WELCOME So let us see some frequently used cat commands. 
+
+-bash-4.2$ grep -in "welcome" test1.txt
+1:welcome
+2:welcome to devops course
+5: It helps us to create, view, concatenate files. WELCOME
+6:WELCOME So let us see some frequently used cat commands.
+
+-bash-4.2$ grep -ine "welcome" -ine "it" test1.txt
+1:welcome
+2:welcome to devops course
+4:It reads data from the file and gives their content as output.
+5: It helps us to create, view, concatenate files. WELCOME
+6:WELCOME So let us see some frequently used cat commands. 
+
+-bash-4.2$ grep -lr "welcome" *
+test1/test2.txt
+test1.txt
+test2.txt
+
+-bash-4.2$ grep -l "welcome" *
+grep: test1: Is a directory
+test1.txt
+test2.txt
+-------------------------------------------------------------------------------
+19.  -bash-4.2$ hostname
+ip-172-31-23-53.us-west-1.compute.internal
+---------------------------------------------------------
+20. -bash-4.2$ who
+ec2-user pts/0        2022-12-31 16:22 (ec2-13-52-6-116.us-west-1.compute.amazonaws.com)
+------------------------------------------------------------------------------------
+21. -bash-4.2$ whoami
+ec2-user
+---------------------------------------
+22.-bash-4.2$ uname
+Linux
+-------------------------------------------------
+23.-bash-4.2$ ps (current running processes)
+  PID TTY          TIME CMD
+ 4021 pts/0    00:00:00 bash
+16372 pts/0    00:00:00 ps
+
+
+-bash-4.2$ps -ef  
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 16:21 ?        00:00:02 /usr/lib/systemd/systemd --switched-root --system --deserialize 21
+root         2     0  0 16:21 ?        00:00:00 [kthreadd]
+root         3     2  0 16:21 ?        00:00:00 [rcu_gp]
+root         4     2  0 16:21 ?        00:00:00 [rcu_par_gp]
+root         6     2  0 16:21 ?        00:00:00 [kworker/0:0H-ev]
+root         8     2  0 16:21 ?        00:00:00 [mm_percpu_wq]
+root         9     2  0 16:21 ?        00:00:00 [rcu_tasks_rude_]
+root        10     2  0 16:21 ?        00:00:00 [rcu_tasks_trace]
+root        11     2  0 16:21 ?        00:00:00 [ksoftirqd/0]
+root        12     2  0 16:21 ?        00:00:00 [rcu_sched]
+root        13     2  0 16:21 ?        00:00:00 [migration/0]
+root        15     2  0 16:21 ?        00:00:00 [cpuhp/0]
+root        17     2  0 16:21 ?        00:00:00 [kdevtmpfs]
+root        18     2  0 16:21 ?        00:00:00 [netns]
+root        19     2  0 16:21 ?        00:00:00 [kworker/u30:1-e]
+root        21     2  0 16:21 ?        00:00:00 [kauditd]
+root       296     2  0 16:21 ?        00:00:00 [khungtaskd]
+root       297     2  0 16:21 ?        00:00:00 [oom_reaper]
+root       298     2  0 16:21 ?        00:00:00 [writeback]
+root       300     2  0 16:21 ?        00:00:00 [kcompactd0]
+root       301     2  0 16:21 ?        00:00:00 [ksmd]
+root       302     2  0 16:21 ?        00:00:00 [khugepaged]
+root       357     2  0 16:21 ?        00:00:00 [kintegrityd]
+root       359     2  0 16:21 ?        00:00:00 [kblockd]
+root       360     2  0 16:21 ?        00:00:00 [blkcg_punt_bio]
+root       712     2  0 16:21 ?        00:00:00 [xen-balloon]
+root       718     2  0 16:21 ?        00:00:00 [tpm_dev_wq]
+root       724     2  0 16:21 ?        00:00:00 [md]
+root       727     2  0 16:21 ?        00:00:00 [edac-poller]
+root       732     2  0 16:21 ?        00:00:00 [watchdogd]
+root       830     2  0 16:21 ?        00:00:00 [kworker/0:1H-kb]
+root       882     2  0 16:21 ?        00:00:00 [kswapd0]
+root       884     2  0 16:21 ?        00:00:00 [xfsalloc]
+root       885     2  0 16:21 ?        00:00:00 [xfs_mru_cache]
+root       888     2  0 16:21 ?        00:00:00 [kthrotld]
+root       899     2  0 16:21 ?        00:00:00 [xenbus]
+root       900     2  0 16:21 ?        00:00:00 [xenwatch]
+root       936     2  0 16:21 ?        00:00:00 [nvme-wq]
+root       938     2  0 16:21 ?        00:00:00 [nvme-reset-wq]
+root       940     2  0 16:21 ?        00:00:00 [nvme-delete-wq]
+root       974     2  0 16:21 ?        00:00:00 [ipv6_addrconf]
+root       983     2  0 16:21 ?        00:00:00 [kstrp]
+root       992     2  0 16:21 ?        00:00:00 [zswap-shrink]
+root       999     2  0 16:21 ?        00:00:00 [kworker/u31:0]
+root      1680     2  0 16:21 ?        00:00:00 [ata_sff]
+root      1685     2  0 16:21 ?        00:00:00 [scsi_eh_0]
+root      1694     2  0 16:21 ?        00:00:00 [scsi_tmf_0]
+root      1698     2  0 16:21 ?        00:00:00 [scsi_eh_1]
+root      1699     2  0 16:21 ?        00:00:00 [scsi_tmf_1]
+root      1703     2  0 16:21 ?        00:00:00 [kworker/u30:3-e]
+root      1710     2  0 16:21 ?        00:00:00 [xfs-buf/xvda1]
+root      1711     2  0 16:21 ?        00:00:00 [xfs-conv/xvda1]
+root      1712     2  0 16:21 ?        00:00:00 [xfs-cil/xvda1]
+root      1713     2  0 16:21 ?        00:00:00 [xfs-reclaim/xvd]
+root      1714     2  0 16:21 ?        00:00:00 [xfs-eofblocks/x]
+root      1715     2  0 16:21 ?        00:00:00 [xfs-log/xvda1]
+root      1716     2  0 16:21 ?        00:00:00 [xfsaild/xvda1]
+root      1775     1  0 16:21 ?        00:00:00 /usr/lib/systemd/systemd-journald
+root      1934     1  0 16:21 ?        00:00:00 /usr/sbin/lvmetad -f
+root      2432     1  0 16:21 ?        00:00:00 /usr/lib/systemd/systemd-udevd
+root      2435     2  0 16:21 ?        00:00:00 [ena]
+root      2488     2  0 16:21 ?        00:00:00 [cryptd]
+root      2577     2  0 16:21 ?        00:00:00 [rpciod]
+root      2578     2  0 16:21 ?        00:00:00 [xprtiod]
+root      2581     1  0 16:21 ?        00:00:00 /sbin/auditd
+dbus      2606     1  0 16:21 ?        00:00:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+rpc       2610     1  0 16:21 ?        00:00:00 /sbin/rpcbind -w
+root      2611     1  0 16:21 ?        00:00:00 /usr/lib/systemd/systemd-logind
+libstor+  2618     1  0 16:21 ?        00:00:00 /usr/bin/lsmd -d
+root      2625     1  0 16:21 ?        00:00:00 /usr/sbin/gssproxy -D
+rngd      2652     1  0 16:21 ?        00:00:00 /sbin/rngd -f --fill-watermark=0 --exclude=jitter
+chrony    2661     1  0 16:21 ?        00:00:00 /usr/sbin/chronyd -F 2
+root      2867     1  0 16:21 ?        00:00:00 /sbin/dhclient -q -lf /var/lib/dhclient/dhclient--eth0.lease -pf /var/run/dhclient-eth0.pid -H ip-172-31-23-53 eth0
+root      2916     1  0 16:21 ?        00:00:00 /sbin/dhclient -6 -nw -lf /var/lib/dhclient/dhclient6--eth0.lease -pf /var/run/dhclient6-eth0.pid eth0 -H ip-172-31-23-
+jenkins   2962     1  1 16:21 ?        00:00:23 /usr/bin/java -Djava.awt.headless=true -jar /usr/share/java/jenkins.war --webroot=%C/jenkins/war --httpPort=8080
+root      3105     1  0 16:22 ?        00:00:00 /usr/libexec/postfix/master -w
+postfix   3109  3105  0 16:22 ?        00:00:00 pickup -l -t unix -u
+postfix   3110  3105  0 16:22 ?        00:00:00 qmgr -l -t unix -u
+root      3148     1  0 16:22 ?        00:00:00 /usr/bin/amazon-ssm-agent
+root      3152     1  0 16:22 ?        00:00:00 /usr/sbin/rsyslogd -n
+root      3156     1  0 16:22 ?        00:00:00 /usr/sbin/sshd -D
+root      3173     1  0 16:22 ?        00:00:00 /usr/sbin/atd -f
+root      3176     1  0 16:22 ?        00:00:00 /usr/sbin/crond -n
+root      3188     1  0 16:22 tty1     00:00:00 /sbin/agetty --noclear tty1 linux
+root      3189     1  0 16:22 ttyS0    00:00:00 /sbin/agetty --keep-baud 115200,38400,9600 ttyS0 vt220
+root      3194  3148  0 16:22 ?        00:00:00 /usr/bin/ssm-agent-worker
+root      3240     1  0 16:22 ?        00:00:00 /usr/sbin/acpid
+root      3253  3156  0 16:22 ?        00:00:00 sshd: ec2-user [priv]
+root      3268     1  0 16:22 ?        00:00:00 /bin/bash /usr/bin/log4j-cve-2021-44228-hotpatch -w 1800 -m 10
+ec2-user  4020  3253  0 16:22 ?        00:00:00 sshd: ec2-user@pts/0
+ec2-user  4021  4020  0 16:22 pts/0    00:00:00 -bash
+root      7129     2  0 16:28 ?        00:00:00 [kworker/0:0-mm_]
+root     11478     2  0 16:36 ?        00:00:00 [kworker/0:1-eve]
+root     14751     2  0 16:42 ?        00:00:00 [kworker/0:2-cgr]
+root     16421  3268  0 16:45 ?        00:00:00 sleep 1
+ec2-user 16422  4021  0 16:45 pts/0    00:00:00 ps -ef
+
+
+-bash-4.2$  ps -u ec2-user
+  PID TTY          TIME CMD
+ 4020 ?        00:00:00 sshd
+ 4021 pts/0    00:00:00 bash
+19035 pts/0    00:00:00 ps
