@@ -1,0 +1,2 @@
+# Dailyactivity
+Linux commands execution
