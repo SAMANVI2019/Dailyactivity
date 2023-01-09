@@ -220,3 +220,42 @@
   835  cd
   836  history
   837  history>>09-01-2023.txt
+  find . -name gsearch
+  843  find . -type f -iname *
+  844  ls
+  845  find . -type f -iname ex3.sh
+  846  find . -empty
+  847  find . -perm 655
+  848  find . -perm 666
+  849  find . -perm 444
+  850  find . -perm 644
+  851  find . -mtime days
+  852  find . -mtime 1
+  853  find . -mtime -7
+  854  find . -mtime 7
+  855  find . -mtime +50 -mtimettttttteeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+  856  find . -mtime +50 -mtime -100
+  857  find . -mtime +5 -mtime -10
+  858  find . -type d -iname gsearch
+  859  ls
+  860  find . -mtime 7 -type d
+  861  find . -mtime 7 -type f
+  862  find ./ -type f -name "*.txt" -exec grep 'linux' {}\;
+  863  find ./ -type f -name "*.*" -exec grep 'linux' {}\;
+  864  find . -type f -name "*.*" -exec grep 'linux' {}\;
+  865  find . -type f -iname "*.*" -exec grep 'linux' {}\;
+  866  find . -atime 10
+  867  find . -atime 
+  868  find . -atime 5
+  869  find . -atime 30
+  870  find / -mmin -60
+  871  find . -type f -name "*.txt" -exec cp {} /home/ec2-user/commands\;
+  872  find . -type f -name "*.txt" --exec cp {} /home/ec2-user/commands\;
+  873  find . -type f -name "*.txt" - exec cp {} /home/ec2-user/commands\;
+  874  find -type f -newermt "2023-01-01 00:00:00"\!-newermt "2023-01-09 09:23:00"
+  875  find -type f -newermt "2023-01-01 00:00:00"\! -newermt "2023-01-09 09:23:00"
+  876  find -type f -newermt "2023-01-01"\! -newermt "2023-01-09"
+  877  find -type f -newermt"2023-01-01"\! -newermt"2023-01-09"
+  878  find -type f -newermt "2023-01-01"\! -newermt "2023-01-09"
+  879  history
+  880  history>>9-1-2023.txt
