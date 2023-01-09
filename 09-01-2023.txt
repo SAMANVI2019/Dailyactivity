@@ -1,0 +1,222 @@
+  616  wq
+  617  vi ppkill1.sh
+  618  sh ppkill1.sh
+  619  wq
+  620  vi pkill.sh
+  621  sh pkill.sh
+  622  vi pkill.sh
+  623  sh pkill.sh
+  624  top
+  625  vi pkill.sh
+  626  sh pkill.sh
+  627  top
+  628  ps
+  629  ps -f
+  630  top
+  631  vi pkill.sh
+  632  ps aux
+  633  vi pkill.sh
+  634  ps aux --sort=%mem
+  635  wq
+  636  vi pkill.sh
+  637  sh pkill.sh
+  638  vi pkill.sh
+  639  sh pkill.sh
+  640  ps aux
+  641  ps -ef
+  642  cat var/log/syslog
+  643  cat var/log
+  644  cd /var/log/messages
+  645  cd /var/log
+  646  ls
+  647  cd jenkins
+  648  sudo cd jenkins
+  649  ls
+  650  pwd
+  651  hostname
+  652  whoami
+  653  who
+  654  pwd
+  655  top
+  656  ps -efH
+  657  top --sort=%mem
+  658  top -hv
+  659  top -p
+  660  ps auxpwd
+  661  pwd
+  662  cd
+  663  vi pkill.sh
+  664  sudo systemctl status jenkins
+  665  ps -ef
+  666  ps aux
+  667  ps aux --sort=%mem
+  668  vi pkill.sh
+  669  ps aux --sort -r=%mem
+  670  ps aux -sort -r=%mem
+  671  ps --help
+  672  man sort
+  673  ps aux --sort -r
+  674  ps aux -sort -r
+  675  ps aux sort -r
+  676  ps aux -r
+  677  ps aux
+  678  ps aux --sort
+  679  ps aux -sort
+  680  ps aux -r --sort=%mem
+  681  ps aux  --sort=%mem
+  682  ps aux  --sort=%mem | tail -1
+  683  ps aux  --sort=%mem | tail -2 | kill -9 
+  684  ps aux  --sort=%mem | tail -2 | kill -9 1775
+  685  ps aux  --sort=%mem | tail -2 | sudo kill -9 1775
+  686  ps aux  --sort=%mem
+  687  ps 1775
+  688  ps 21907
+  689  sh pkill.sh
+  690  ps 31845
+  691  ps aux  --sort=%mem | tail -1
+  692  vi pkill.sh
+  693  ps aux  --sort=%mem | tail -1 | awk '{printf $2}'
+  694  vi pkill.sh
+  695  vi pkill.sh
+  696  ps aux  --sort=%mem | tail -1
+  697  ps aux  --sort=%mem | tail -2
+  698  ps aux  --sort=%mem
+  699  vi pkill.sh
+  700  sh pkill.sh
+  701  vi pkill.sh
+  702  sh pkill.sh
+  703  vi pkill.sh
+  704  sh pkill.sh
+  705  vi pkill.sh
+  706  sh pkill.sh
+  707  vi pkill.sh
+  708  sh pkill.sh
+  709  vi pkill.sh
+  710  sh pkill.sh
+  711  ps aux  --sort=%mem 
+  712  sudo kill -9 17808
+  713  sudo systemctl status jenkins
+  714  sudo kill -9 17880
+  715  ping
+  716  vi pkill.sh
+  717  ps -ef
+  718  ps
+  719  vi pkill.sh
+  720  cat pkill.sh
+  721  sh pkill.sh
+  722  vi pkill.sh
+  723  sh pkill.sh
+  724  vi pkill.sh
+  725  sh pkill.sh
+  726  vi pkill.sh
+  727  sh pkill.sh
+  728  vi pkill.sh
+  729  sh pkill.sh
+  730  vi pkill.sh
+  731  sh pkill.sh
+  732  vi pkill.sh
+  733  clear
+  734  cat pkill.sh
+  735  vi pkill.sh
+  736  clear
+  737  cat pkill.sh
+  738  sh pkill.sh
+  739  clear
+  740  cat pkill.sh
+  741  sh pkill.sh
+  742  cat pkill.sh
+  743  vi pkill.sh
+  744  sh pkill.sh
+  745  clear
+  746  cat pkill.sh
+  747  sh pkill.sh
+  748  sudo systemctl stop jenkins
+  749  ps aux
+  750  ps aux --sort=%mem
+  751  sh pkill.sh
+  752  ps aux --sort=%mem
+  753  sh pkill.sh
+  754  sudo syatemctl start jenkins
+  755  sudo systemctl start jenkins
+  756  sudo syatemctl enable jenkins
+  757  sudo systemctl enable jenkins
+  758  vi gsearch
+  759  grep "^linux" gsearch
+  760  grep -i "^linux" gsearch
+  761  grep -in "^linux" gsearch
+  762  grep -inv "^linux" gsearch
+  763  grep -in "linux" gsearch
+  764  grep -in "linux$" gsearch
+  765  cat gsearch
+  766  grep -in "code." gsearch
+  767  grep -in "code.$" gsearch
+  768  grep -in "code$" gsearch
+  769  grep -in "code.$" gsearch
+  770  grep "[a-e]" gsearch
+  771  grep "[^aeiou]" gsearch
+  772  grep "*[0-9]" gsearch
+  773  grep -r "linux"
+  774  grep -i "linux" *
+  775  grep -ir "linux" *
+  776  grep -ir "linux.*code" gsearch
+  777  grep -ir "linux.*code." gsearch
+  778  grep -i "linux.*code." gsearch
+  779  grep -i "linux.*code.$" gsearch
+  780  grep 'linux\|is' gsearch
+  781  grep -e "linux" -e "is"  gsearch
+  782  grep -i 'linux\|is' gsearch
+  783  history>>08-01-2023.txt
+  784  vi 08-01-2023.txt
+  785  sed 's/linux/unix/ig' gsearch
+  786  cat gsearch
+  787  sed 's/unix/android/1' gsearch
+  788  sed 's/unix/android/i1' gsearch
+  789  sed 's/unix/android/g' gsearch
+  790  sed 's/windows/android/i2' gsearch
+  791  sed '3s/system/nodes/i2' gsearch
+  792  sed '3s/system/nodes/p' gsearch
+  793  sed '3s/system/nodes/' gsearch
+  794  sed -n '3s/system/nodes/' gsearch
+  795  sed -n '3s/system/nodes/p' gsearch
+  796  sed -n '3s/system/nodes/!p' gsearch
+  797  sed -n '/system/!p' gsearch
+  798  sed -n 's/system/(&)/g' gsearch
+  799  sed -n 's/system/(&)/ig' gsearch
+  800  sed  's/system/(&)/ig' gsearch
+  801  sed  's/system(&)/1 2/ig' gsearch
+  802  sed  's/system(&)/12/ig' gsearch
+  803  ls -a
+  804  cd .ssh
+  805  ls
+  806  pwd
+  807  ssh-keygen
+  808  ls
+  809  cat id_rsa.pub
+  810  ssj ec2-user@54.241.88.147
+  811  ssh ec2-user@54.241.88.147
+  812  which jenkins
+  813  pwd
+  814  ls
+  815  cat id_rsa
+  816  cd
+  817  aws configure
+  818  sudo su -jenkins
+  819  sudo su - jenkins
+  820  aws configure
+  821  pwd
+  822  ls
+  823  aws configure
+  824  sudo su – jenkins
+  825  pwd
+  826  which aws
+  827  cd .ssh
+  828  ls
+  829  cat id_rsa.pub
+  830  cd
+  831  ssh ec2-user@54.183.166.146
+  832  cd .ssh
+  833  ls
+  834  cat id_rsa
+  835  cd
+  836  history
+  837  history>>09-01-2023.txt
