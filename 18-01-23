@@ -1,0 +1,214 @@
+  214  ls -a
+  215  cat test1.txt
+  216  new test2.txt
+  217  cat test2.txt
+  218  git log
+  219  git init
+  220  ls -a
+  221  git add ..
+  222  git add *
+  223  git status
+  224  git commit -m "test1 and test2 are commited
+  225  "
+  226  git log
+  227  vi test1.txt
+  228  git add *
+  229  git commit -m "test1 is edited
+  230  "
+  231  git log --oneline
+  232  git checkout 6e8a1f8
+  233  git log --oneline
+  234  vi test1.txt
+  235  git checkout e987915
+  236  git log --oneline
+  237  vi test1.txt
+  238  cat test1.txt
+  239  git checkout -b br1
+  240  git log --oneline
+  241  cat test1.txt
+  242  vi test1.txt
+  243  git add *
+  244  git commit -m "test1 is edited in branch b1"
+  245  git log --oneline
+  246  git branch
+  247  git branch master
+  248  git checkout master
+  249  vi test1.txt
+  250  git add *
+  251  git commit -m "test1 is edited in branch master"
+  252  git log --oneline
+  253  git merge br1
+  254  git log --oneline
+  255  vi test1.txt
+  256  git log --oneline
+  257  vi test1.txt
+  258  git add *
+  259  git commit -m "test1 is after merge"
+  260  git log --oneline
+  261  git checkout br1
+  262  git log --oneline
+  263  ls
+  264  vi test1.txt
+  265  git add *
+  266  git commit -m "test1 is edited after merge"
+  267  git log --oneline
+  268  git checkout master
+  269  git log --oneline
+  270  git rebase branch
+  271  git rebase br1
+  272  git log --oneline
+  273  vi test1.txt
+  274  git log test1.txt
+  275  git rebase --skip
+  276  ls
+  277  ls -a
+  278  ls
+  279  ls -a
+  280  touch t1 t2
+  281  echo "t1 is created">>t1
+  282  echo "t2 is created">>t2
+  283  gir add t1
+  284  git add t1
+  285  git add t2
+  286  git commit -m "t1 and t2 are committed"
+  287  git log
+  288  git checkout t1
+  289  git log
+  290  git log
+  291  git checkout  f962ad2620ddf2a0f35f169fabb0446cb918a1a
+  292  git log --0neline
+  293  git log --oneline
+  294  git checkout  43c486f
+  295  git log --oneline
+  296  git status
+  297  git commit -m "t1 t2"
+  298  git add *
+  299  git status
+  300  git restored --staged
+  301  git restore --staged
+  302  git restore --staged test1 to unstage
+  303  mkdir practice
+  304  cd practice
+  305  git init
+  306  ls -a
+  307  touch t1 t2
+  308  echo "t1 is created">>t1
+  309  echo "t2 is created">>t2
+  310  git commit -m -a "t1 and t2 are committed"
+  311  git add t1
+  312  git add t2
+  313  git commit -m "t1 is committed"
+  314  git status
+  315  git log --oneline
+  316  git checkout -b ch1
+  317  git checkout master
+  318  git checkout -b ch2
+  319  git log --oneline
+  320  git tag chtag1
+  321  git log --oneline
+  322  echo "in branch ch2 f1 is created">>f1
+  323  git commit -m "f1 is committed in ch2"
+  324  git add f1
+  325  git commit -m "f1 is committed in ch2"
+  326  git log --oneline
+  327  git tag -d chtag1
+  328  git log --oneline\
+  329  git branch
+  330  history
+  331  git branch ch3 ch2
+  332  git branch
+  333  git checkout ch3
+  334  git log --oneline
+  335  git branch ch3 ch1
+  336  git checkout ch1
+  337  git log
+  338  git merge ch3 ch1
+  339  git log --oneline
+  340  ls
+  341  echo "f1 is added to ch1 from ch3">>f1
+  342  git add *
+  343  git commit -m "f1 is added to ch1 from ch3"
+  344  git log --oneline
+  345  git checkout ch3
+  346  ls
+  347  echo "f1 is created in ch1">>f1
+  348  git add *
+  349  git commit -m  "f1 is created in ch1"
+  350  git merge ch3 ch1
+  351  vi f1
+  352  git merge ch3 ch1
+  353  git add *
+  354  git commit -m  "f1 is updated after merge"
+  355  git merge ch3 ch1
+  356  git checkout ch1
+  357  git log --oneline
+  358  vi f1
+  359  vi f1
+  360  cat f1
+  361  echo "#include<stdio.h> >>ch1f2
+
+  362  echo "#include<stdio.h>" >>ch1f2
+  363  git add *
+  364  git commit -m  "f2 is created in ch1"
+  365  git log --oneline
+  366  git branch
+  367  git checkout ch2
+  368  git cherrypick 18d76aa
+  369  git cherry-pick 18d76aa
+  370  git log --oneline
+  371  cat f2
+  372  cat 25b0b76
+  373  ls
+  374  cat ch1f2
+  375  git checkout master
+  376  git log --oneline
+  377  git rebase ch2
+  378  git log --oneline
+  379  ls
+  380  git rebase ch1
+  381  git log --oneline
+  382  git revert e06cf8e
+  383  git log --oneline
+  384  git status
+  385  git revert e06cf8e
+  386  cat t1
+  387  ls
+  388  git log --oneline
+  389  git checkout ch1
+  390  ls
+  391  git log --oneline
+  392  touch ch1f3
+  393  vi ch1f3
+  394  git add *
+  395  git commit -m "ch1f3 is created"
+  396  git log --oneline
+  397  git revert 7e189d0
+  398  git log --oneline
+  399  ls
+  400  touch ch1f3
+  401  vi ch1f3
+  402  git add *
+  403  git commit -m "ch1f3 is created after revert"
+  404  git log --oneline
+  405  git reset --soft 83977cc
+  406  git log --oneline
+  407  git status
+  408  cat ch1f3
+  409  git reset --soft 18d76aa
+  410  git log --oneline
+  411  git status
+  412  git add *
+  413  git status
+  414  git reset --mixed 18d76aa
+  415  git status
+  416  git add *
+  417  git commit -m "ch1f3 is created after reset"
+  418  git log --oneline
+  419  git squash d3cc692 29e75ae
+  420  git rebase -i  d3cc692 29e75ae
+  421  git log --oneline
+  422  ls
+  423  cat f1
+  424  ls
+  425  git status
+  426   history >> 18-01-23
