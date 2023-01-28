@@ -1,0 +1,123 @@
+ubuntu@ip-172-31-10-234:~$ cat 28-01-2023
+    1  sudo apt-get update
+    2  sudo apt-get install     ca-certificates     curl     gnupg     lsb-release
+    3  sudo mkdir -p /etc/apt/keyrings
+    4  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+    5  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+    6    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    7  sudo apt-get update
+    8  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+    9  sudo docker run hello-world
+   10  whereis docker
+   11  docker images
+   12  sudo docker images
+   13  sudo docker images -q
+   14  docker info
+   15  sudo su -
+   16  docker info
+   17  sudo docker info
+   18  sudo su -
+   19  ls
+   20  cd /day1/day1
+   21  cd day1
+   22  ls
+   23  ls -l cprog1.sh
+   24  touch -m cprog1.sh
+   25  ls -l cprog1.sh
+   26  man touch
+   27  stat cprog1.c
+   28  stat cprog1.sh
+   29  touch -a cprog1.sh
+   30  stat cprog1.sh
+   31  history
+   32  docker images
+   33  sudo docker images
+   34  sudo docker images -q
+   35  docker la
+   36  docker ls
+   37  docker ps
+   38  sudo docker ps
+   39  sudo docker ps -a
+   40  su -
+   41  sudo su -
+   42  sudo docker info
+   43  docker images
+   44  sudo docker images
+   45  sudo docker images -q
+   46  sudo docker ps
+   47  sudo docker images -a
+   48  sudo docker images -aq
+   49  docker run -it ubuntu /bin/bash
+   50  sudo docker run -it ubuntu /bin/bash
+   51  docker images
+   52  sudo docker images
+   53  sudo docker run -it --name con1 ubuntu /bin/bash
+   54  docker ps -a
+   55  sudo su
+   56  docker run -it ubuntu /bin/bash
+   57  sudo su
+   58  ls
+   59  cd day1
+   60  ls
+   61  mkdir -p d1/d2/d3
+   62  ls
+   63  cd d1
+   64  ls
+   65  cd d2
+   66  ls
+   67  cd d3
+   68  ls
+   69  cd ../../
+   70  cd d2
+   71  cd d3
+   72  cd ../../../
+   73  cd ./d1/d2/d3
+   74  cd ../../../../
+   75  ls
+   76  man mkdir
+   77  mkdir -v r1
+   78  ls
+   79  cat welcome to devops>>r2
+   80  echo  welcome to devops>>r2
+   81  cat r2
+   82  echo "welcome to linux instance">>r3
+   83  cat r3
+   84  cat r2 r3
+   85  cat r2 r3 >> r1
+   86  cat -r r2 r3 >> r1
+   87  cat  r2 r3 >> r4
+   88  cat r4
+   89  tac r4
+   90  man cat 
+   91  vi r5
+   92  head -6 r
+   93  head -6 r5
+   94  head -6 r5 | tail -2 r5
+   95  head -6 r5 | tail -2
+   96  head -6 r5 | tail -1
+   97  tail -1 r5
+   98  cat r5
+   99  head -4 r5
+  100  head -4 r5 |tail -1
+  101  head -4 r5 |tail -2
+  102  head -4 r5 |tail -3
+  103  head -4 r5 |tail -3|grep "two"
+  104  head -4 r5 |tail -3|grep "^two"
+  105  head -4 r5 |tail -3|grep "up$"
+  106  head -4 r5 |tail -3|grep "up.$"
+  107  head -4 r5 |tail -3|grep -ne "up.$"
+  108  head -4 r5 |tail -3|grep -ne "up.$" -ei "aws"
+  109  head -4 r5 |tail -3|grep -ne "up.$" -i -e "aws"
+  110  head -4 r5 |tail -3|grep -ne "up.$" -i -v  -e "aws"
+  111  head -4 r5 |tail -3|grep -ne "up.$" -i -r -e "aws"
+  112  grep -i -r -e "aws"
+  113  ls
+  114  grep -i -r -e "welcome"
+  115  man grep
+  116  egrep "aws" "welcome"
+  117  egrep "aws" "welcome" r5
+  118  egrep "aws"-e  "welcome" r5
+  119  egrep "aws" -e  "welcome" r5
+  120  egrep -e "aws" -e  "welcome" r5
+  121  egrep -e -i "aws" -e  "welcome" r5
+  122  history >> 28-01-2023
