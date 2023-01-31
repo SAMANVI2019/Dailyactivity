@@ -1,0 +1,38 @@
+find / -type f -name *.mp3 -size +10M -exec rm{} \;
+  330  rpm -qf /etc/fstab
+  331  sudo apt install rpm
+  332  rpm -qf /etc/fstab
+  333  cat t3
+  334  sed "s/aws/azure/" t3
+  335  sed "s/aws/azure/g" t3
+  336  sed "s/aws/azure/ig" t3
+  337  sed "s/aws/azure/ig" t3 | grep "aws"
+  338  sed "s/aws/azure/ig" t3 | grep -i  "azure"
+  339  sed "s/aws/azure/ig" t3 | grep -i  "^azure"
+  340  sed "s/aws/azure/ig" t3 | grep -i  "^azure$"
+  341  sed "s/aws/azure/ig" t3 | grep -i  "^azure.$"
+  342  cat t3
+  343  sed "3s/aws/azure/p" t3
+  344  sed "s/aws/azure/p" t3
+  345  sed "s/aws/azure/ip" t3
+  346  sed "3s/aws/azure/ip" t3
+  347  sed "2s/aws/azure/ip" t3
+  348  sed -n "2s/aws/azure/ip" t3
+  349  sed "$d" t3
+  350  vi t3
+  351  sed '$d' t3
+  352  sed '3d' t3| cat
+  353  sed '3d' t3|echo 
+  354  sed '4d' t3|echo 
+  355  sed '4d' t3
+  356  sed '1,4d' t3
+  357  sed '2,$d' t3
+  358  sed '/to/d' t3
+  359  sed -n '/to/d' t3
+  360  cat t3
+  361  sed '3p' t3
+  362  sed -n '3p' t3
+  363  sed -n '1,3p' t3
+  364  sed -n '6,$p' t3
+  365  head t3
+  366  history
