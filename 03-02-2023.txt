@@ -1,0 +1,96 @@
+fdisk -l
+  342  sudo fdisk -l
+  343  ls -l /
+  344  cd bin
+  345  cd /bin
+  346  ls -l
+  347  cd passwd
+  348  cd csh
+  349  cd chsh
+  350  cd who
+  351  who
+  352  cat who
+  353  cat chsh
+  354  cat grep
+  355  cd..
+  356  cd ..
+  357  ls -l /
+  358  cd /usr/bin
+  359  ls
+  360  cat ssh
+  361  cat /etc/passwd
+  362  sudo useradd chethana
+  363  cat /etc/passwd
+  364  passwd
+  365  cd boot
+  366  cd /
+  367  cd boot
+  368  ls
+  369  cd -
+  370  cd etc
+  371  ls -l
+  372  cd sudoers.d
+  373  sudo cd sudoers.d
+  374  cat  sudoers.d
+  375  sudo cat  sudoers.d
+  376  sudo cat -r  sudoers.d
+  377  vi  sudoers.d
+  378  cat fstab
+  379  man fstab
+  380  vi passwd
+  381  getent passwd
+  382  cd -
+  383  sudo su -
+  384  cat /var/log
+  385  vi  /var/log
+  386  vi  /var/log/syslog
+  387  cat  /var/log/syslog
+  388  cat  /var/log/syslog | grep "ubuntu"
+  389  cat  /var/log/auth.log
+  390  history
+  391  who
+  392  whoami
+  393  uname
+  394  hostname
+  395  ps -ef
+  396  ps
+  397  ipconfig
+  398  iconfig
+  399  netstat -a
+  400  netstat
+  401  sudo apt install net-tools
+  402  netstat -a
+  403  netstat -al
+  404  netstat -alt
+  405  netstat -altu
+  406  grep "aws" t3
+  407  grep -i  "aws" t3
+  408  grep -i  "^aws" t3
+  409  grep -i  "up.$" t3
+  410  grep -in  "up.$" t3
+  411  grep -inc  "up.$" t3
+  412  grep -li  "aws" t3
+  413  grep -li  "aws" 
+  414  grep -lri  "aws" 
+  415  grep -lr  "aws" 
+  416  grep -lrc  "aws" 
+  417  grep -lrcw  "aws" 
+  418  grep -lrw  "aws" 
+  419  grep -w  "aws" t3
+  420  grep -iw  "aws" t3
+  421  grep -io  "aws" t3
+  422  grep -io  "[aws]" t3
+  423  grep -io  "[a-s]" t3
+  424  grep -i  "[a-s]" t3
+  425  grep -i  "[1-9]" t3
+  426  grep -i -A "UP" t3
+  427  HISTORY
+  428  history
+  429  sed "s/aws/azure" t3
+  430  sed "s/aws/azure/" t3
+  431  sed "s/aws/azure/i" t3
+  432  sed "s/aws/azure/ig" t3
+  433  sed "s/aws/azure/2ig" t3
+  434  sed "3s/aws/azure/2ig" t3
+  435  sed "1,3s/aws/azure/2ig" t3
+  436  history
