@@ -1,0 +1,167 @@
+ 1  curl -s https://raw.githubusercontent.com/AvinashKendur/devops-nov-2022/main/Kubernetes/k8s_install.sh | bash -s worker
+    2  kubeadm join 172.31.22.120:6443 --token 2x1y4z.zxx6afobb9mlklpl \
+    3  sudo su -
+    4  ls
+    5  mkdir -p d1/d2/d3
+    6  ls
+    7  tree
+    8  sudo apt-get install tree
+    9  tree
+   10  echo "file 2 is created in worker node 2">>file2 |tee file3
+   11  ls
+   12  cat file3
+   13  cat file2
+   14  echo "file 2 is created in worker node 2">>file2 | tee file3
+   15  cat file3
+   16  cat file2 | tee file3
+   17  cat file3
+   18  grep "in" file3
+   19  grep "^f*" file3
+   20  grep " $" file3
+   21  grep "*$" file3
+   22  grep "*.$" file3
+   23  grep "2$" file3
+   24  grep "node" file3
+   25  grep -i "NODE" file3
+   26  egrep -i "NODE" -e "in" file3
+   27  egrep -ie "NODE" -e "in" file3
+   28  egrep -ien "NODE" -e "in" file3
+   29  egrep -ine "NODE" -e "in" file3
+   30  egrep -inwe "NODE" -e "in" file3
+   31  egrep -inwe "NOE" -e "in" file3
+   32  egrep -inwoe "NOE" -e "in" file3
+   33  egrep -inwoe "NOdE" -e "in" file3
+   34  egrep -inwove "NOdE" -e "in" file3
+   35  egrep -inwove "on" -e "in" file3
+   36  egrep -inwove "on" file3
+   37  egrep -inwove "in" file3
+   38  egrep -inwove "an" file3
+   39  egrep -inwov "an" file3
+   40  egrep -inv "an" file3
+   41  egrep -incv "an" file3
+   42  grep -inc "[a-e]" file3
+   43  grep -in "[a-e]" file3
+   44  grep -in "[^a-e]" file3
+   45  grep -in "[a-e$]" file3
+   46  grep -in "[1-9]" file3
+   47  grep -in "[^1-9]" file3
+   48  grep "[^1-9]" file3
+   49  grep -A  "in" file3
+   50  grep -A 1 "in" file3
+   51  grep -r "node" 
+   52  grep -r "node" *
+   53  grep -lr "node" *
+   54  sed "s/in/on/" file3
+   55  sed "s/IN/on/" file3
+   56  sed "s/IN/on/i" file3
+   57  sed "s/IN/on/i" file3
+   58  cat file3
+   59  sed "s/IN/on/ig" file3
+   60  sed "s/echo/on/ig" file3
+   61  sed "3s/echo/on/ig" file3
+   62  sed "8s/echo/on/ig" file3
+   63  sed "8s/echo/on/2ig" file3
+   64  sed "8,9s/echo/on/ig" file3
+   65  sed "8,$s/echo/on/ig" file3
+   66  sed "8,$/echo/on/ig" file3
+   67  sed -e "8,$s/echo/on/ig" file3
+   68  sed  "8,$s/echo/on/i" file3
+   69  sed  "^,$s/echo/on/i" file3
+   70  sed "s/echo/on/p" file3
+   71  sed "s/in/on/p" file3
+   72  sed "in/p" file3
+   73  history
+   74  cat file3
+   75  sed "4d" file3
+   76  sed "4p" file3
+   77  sed -n "4p" file3
+   78  sed -n "echp/p" file3
+   79  sed  "8,$ s/echo/on/i" file3
+   80  sed -n "/echo/p" file3
+   81  sed -n "/echo/! p" file3
+   82  sed "s/()//<>/" file3
+   83  sed "s/()|<>/" file3
+   84  sed "s /()|<>/" file3
+   85  sed "s/() | <> /" file3
+   86  find file3
+   87  find . file3
+   88  find . -name  file3
+   89  find .-type f  -name  file3
+   90  find . -type f -name  file3
+   91  find . -type d -name  file3
+   92  find . -type d -name  *
+   93  find . -type d  *
+   94  find -empty
+   95  find . -perm 655
+   96  find . -perm 666
+   97  find . -perm 433
+   98  find . -perm 777
+   99  ls -l
+  100  find . -perm 664
+  101  find . -exec grep "echo" {} ;
+  102  find . -type f  -exec grep "echo" {} ;
+  103  find . -type f -name *.txt  -exec grep "echo" {} ;
+  104  find . -type f -name "*.txt" -exec grep "echo" {} ;
+  105  find ./ -type f -name "*.txt" -exec grep "echo" {} ;
+  106  find . -type f -name "*.txt" -exec grep "echo" {} ;
+  107  find -type f -name 
+  108  find . -type f -name "*.txt"
+  109  find . -type f -name "*" -exec grep "echo" {} ;
+  110  find . -type f -name "*.txt"
+  111  find . -type f -name "*"
+  112  find . -type f -name *
+  113  find . -type f -name "*"
+  114  find . -type f -name "*" | grep "echo" 
+  115  find . -type f -name "*" -exec grep "in" {}\; 
+  116  find . -type f -name "*" -exec grep "echo" {}\; 
+  117  find. -type f -name "*" -exec grep "echo" {}\; 
+  118  find . -type f -name "*" -exec grep "echo" {}\; 
+  119  find . -type f -name "*"-exec grep "echo" {}\; 
+  120  find . -type f -name "*" -exec grep "echo" {}\; 
+  121  find -mtime -
+  122  find -mtime -5
+  123  find -mtime +5
+  124  find -mtime +5 and -10
+  125  find -mtime +5 and -matime  -10
+  126  find -mtime +5 -mtime  -10
+  127  find -mtime -1 -mtime +10
+  128  find -mtime -1 -mtime +5
+  129  find -mtime +1 -mtime -5
+  130  find -mtime +1 -mtime -2
+  131  find -mtime +1
+  132  find -mtime -1
+  133  find -mtime -1 -mtime +1
+  134  find -mtime -2
+  135  file . -size 50
+  136  file /  -size 50
+  137  file / -size 50M
+  138  find / -size 50M
+  139  find / -size 5M
+  140  find / -size +200M -exec rm -rf {}\;
+  141  find / -size +200M -exec rm -rf{}\;
+  142  find / -size +200
+  143  find . -type f -name "*" -exec grep "in"{} \; 
+  144  find . -type f -name "*" -exec grep "in" {} \; 
+  145  find . -type f -name "*" -exec grep "node" {} \; 
+  146  find . -exec grep "echo" {} ;
+  147  find . -user ubuntu 
+  148  find . -group ubuntu 
+  149  uname -a
+  150  uname
+  151  cat /etc/os-release
+  152  hostname
+  153  netstat -a
+  154  sudo apt install net-tools
+  155  netstat -a
+  156  netstat -al
+  157  netstat -alt
+  158  netstat -altu
+  159  ls -l /
+  160  cd bin
+  161  sudo su -
+  162  mkdir /dir1
+  163  mkdir /dirn
+  164  sudo mkdir /dirn
+  165  mount /dev/sdb1 /dirn
+  166  su -
+  167  history
